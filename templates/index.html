@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Legal Template Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<header>
+    <h1>⚖️ AI Legal Template Generator</h1>
+    <p>Create professional legal document templates instantly</p>
+</header>
+
+<main>
+    <form method="POST" id="docForm">
+        <label>Document Instruction</label>
+        <input
+            type="text"
+            name="instruction"
+            placeholder="Generate an Internship Agreement template"
+            required
+        />
+
+        <button type="submit">
+            Generate & Download (.docx)
+        </button>
+
+        <div id="loading">Generating document, please wait…</div>
+    </form>
+</main>
+
+<footer>
+    <p>Powered by GROQ • LLaMA 3.3</p>
+</footer>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
